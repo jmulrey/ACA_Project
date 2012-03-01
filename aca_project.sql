@@ -19,7 +19,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `aca_project`
 --
-
+CREATE DATABASE IF NOT EXISTS aca_project;
+GRANT ALL ON aca_project.* TO 'aca_project'@'localhost' IDENTIFIED BY 'password';
+use aca_project;
 -- --------------------------------------------------------
 
 --
