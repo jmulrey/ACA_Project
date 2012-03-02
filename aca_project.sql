@@ -25,6 +25,9 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `trails`
 --
+CREATE DATABASE IF NOT EXISTS aca_project;
+GRANT ALL PRIVILEGES ON aca_project.* to 'assist'@'localhost' identified by 'assist';
+USE aca_project;
 
 CREATE TABLE IF NOT EXISTS `trails` (
   `TrailName` varchar(20) NOT NULL,
@@ -42,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `trails` (
 --
 -- Table structure for table `users`
 --
-
+GRANT ALL PRIVILEGES ON aca_project.* to 'assist'@'localhost' identified by 'assist';
 CREATE TABLE IF NOT EXISTS `users` (
   `Username` varchar(15) NOT NULL,
   `Password` varchar(15) NOT NULL,
