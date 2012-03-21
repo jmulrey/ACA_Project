@@ -1,24 +1,35 @@
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Create Account</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-
-<body>
+<table width = "100%">
+<tr>
+<td align = "left"><img src = "header.png" width = "100%"></td>
+</tr>
+</table>
+<table width = "100%" bgcolor=#4000FF>
+<tr>
+<td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "aca_login.php" style = "text-decoration: none"><font color=#FFFFFF >login</font></font></a></td>
+</tr>
+</table>
+<BODY bgcolor=#728FCE>
+<table width = "100%">
+<td>
 <div id="contents">
 <div id="contents">
-  <h1>Create Account</h1>
+  <h1 align=center><font color=#FFFFFF >Create Account</font></h1>
+  <center>
   <form method="post" action="register.php">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" /><br />
-    <label for="pw">Password:</label>
-    <input type="password" id="pw" name="pw" /><br />
-	<label for="pw">Enter Password Again:</label>
-    <input type="password" id="pw2" name="pw2" /><br />
+    <label for="username" ><font color=#FFFFFF >Username:</font></label>
+    <input type="text" id="username" name="username" /> <br/><br/>
+    <label for="pw" ><font color=#FFFFFF >Password:</font></label>
+    <input type="password" id="pw" name="pw" /> <br/><br/>
+	<label for="pw2" ><font color=#FFFFFF >Enter Password Again:</font></label>
+    <input type="password" id="pw2" name="pw2" /> <br/><br/>
     <input type="submit" value="Create Account" name="submit" />
   </form>
+  </center>
   </div>
 <?php
 	include "db_connect.php";
@@ -68,5 +79,19 @@
 					}
 				
 					?>
+					</td>
+<td style = "background-color:#EEEEEE;width:300px;text-align:top;">
+<center>
+<form action = "login.php"\>
+<h2><font color=#728FCE>Member Log In</font></h2>
+<h3 align=left><font color=#728FCE>Username</font></h3>
+<input type = "text" name = "username" size = "40"/>
+<h3 align=left><font color=#728FCE>Password</font></h3>
+<input type = "text" name = "password" size = "40"/>
+<input align=right type = "submit" name = "submit" value = "submit" /></td>
+</form>
+</center>
+</td>
+</table>
 					</body>
 					</html>

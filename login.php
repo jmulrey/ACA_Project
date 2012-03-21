@@ -1,23 +1,22 @@
 <?php include "db_connect.php";?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-<LINK href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
-
-
-<body>
-<div class="header">
-</div>
-<div class="body">
-<table cellspacing="0"><tr><td>
-<table padding-left="5px" cellspacing="0">
-</table></td>
+<table width = "100%">
+<tr>
+<td align = "left"><img src = "header.png" width = "100%"></td>
+</tr>
 </table>
+<table width = "100%" bgcolor=#4000FF>
+<tr>
+<td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "login.php" style = "text-decoration: none"><font color=#FFFFFF >login</font></font></a></td>
+</tr>
+</table>
+<BODY bgcolor=#728FCE>
 
-<table cellspacing="0"><tr>
-<td class="content"><h5>
+<table width = "100%">
+<td>
+
 <?php
 
 $name = mysqli_real_escape_string($db,$_POST['username']);
