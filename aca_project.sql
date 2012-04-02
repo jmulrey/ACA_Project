@@ -27,17 +27,30 @@ USE aca_project;
 -- Table structure for table `trails`
 
 
-
 CREATE TABLE IF NOT EXISTS `trails` (
   `TrailName` varchar(20) NOT NULL,
-  `Dropoff` varchar(30) NOT NULL,
-  `Pickup` varchar(30) NOT NULL,
-  `State` varchar(20) NOT NULL,
+  `Description` blob NOT NULL,
+  `Dropoff_Name` varchar(50) NOT NULL,
+  `Dropoff_City` varchar(30) NOT NULL,
+  `Dropoff_State` varchar(2) NOT NULL,
+  `Pickup_Name` varchar(50) NOT NULL,
+  `Pickup_City` varchar(30) NOT NULL,
+  `Pickup_State` varchar(2) NOT NULL,
+  `State` varchar(2) NOT NULL,
   `Difficulty` int(10) NOT NULL,
   `Length` int(100) NOT NULL,
   `Index` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`Index`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `trails`
+--
+
+INSERT INTO `trails` (`TrailName`, `Description`, `Dropoff_Name`, `Dropoff_City`, `Dropoff_State`, `Pickup_Name`, `Pickup_City`, `Pickup_State`, `State`, `Difficulty`, `Length`, `Index`) VALUES
+('Rappahannock River', 0x5468697320697320612070726574747920636f6f6c20747261696c2e, 'Rappahannock River', 'Fredericksburg', 'VA', 'Rappahannock River', 'Fredericksburg', 'VA', 'VA', 5, 50, 1),
+('Lake Naticook', '', 'Lake Naticook', 'Merrimack', 'NH', 'Lake Naticook', 'Merrimack', 'NH', 'NH', 2, 10, 2),
+('Lake Anna', '', 'Lake Anna', 'Lewiston', 'VA', 'Lake Anna', 'Lewiston', 'VA', 'VA', 2, 15, 3);
 
 -- --------------------------------------------------------
 
