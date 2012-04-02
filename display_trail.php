@@ -19,18 +19,38 @@
 
 <?php
 
-$name = $_SESSION['username'];
+//$name = $_SESSION['username'];
 $t = $_GET['trail'];
 $trail = (string)$t;
 
-echo("<tr><td><h2>Group: $trail</h2>");
-$query = "select groupdescription from groups WHERE groupName = '$trail'";
-$result = mysqli_query($db, $query);
+echo("<tr><td><h2>Trail: $trail</h2>");
+$query = "select * from trails WHERE TrailName = '$trail'";
+$result = mysql_query($query);
 
-while($row = mysqli_fetch_array($result)){
-$content = $row['groupdescription'];
-echo("<h4>Description: </h4><h5>$content</h5>");
+
+while($row = mysql_fetch_array($result)){
+$dropoffname = $row['Dropoff_Name'];
+$dropoffcity = $row['Dropoff_City'];
+$dropoffstate = $row['Dropoff_State'];
+echo("<table cellspacing='0' cellpadding='0' border='0'><tr><td><iframe src='http://www.map-generator.net/extmap.php?name=$dropoffname&amp;address=$dropoffcity%2C%20$dropoffstate&amp;width=500&amp;height=400&amp;maptype=map&amp;zoom=14&amp;hl=en&amp;t=1333393947' width='500' height='400' marginwidth='0' marginheight='0' frameborder='0' scrolling='no'></iframe></td></tr><tr><td align='right'><a style='font:8px Arial;text-decoration:none;cursor:default;color:#5C5C5C;' href='http://www.map-generator.net'>map-generator.net</a></td></tr></table><!-- Do not change code! -->");
+$content = $row['Description'];
+echo("<table border = '1' bgcolor='#FFFFFF'><tr><td>Description: $content</td></tr>");
+$content = $row['State'];
+echo("<tr><td>State: $content</td></tr>");
+$content1 = $row['Dropoff_Name'];
+$content2 = $row['Dropoff_City'];
+$content3 = $row['Dropoff_State'];
+echo("<tr><td>Dropoff: $content1, $content2, $content3</td></tr>");
+$content1 = $row['Pickup_Name'];
+$content2 = $row['Pickup_City'];
+$content3 = $row['Pickup_State'];
+echo("<tr><td>Pickup: $content1, $content2, $content3</td></tr>");
+$content = $row['Length'];
+echo("<tr><td>Length: $content miles</td></tr>");
+$content = $row['Difficulty'];
+echo("<tr><td>Difficulty: $content</td></tr></table>");
 } 
+
 
 
 
