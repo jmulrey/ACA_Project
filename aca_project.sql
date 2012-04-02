@@ -18,18 +18,15 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `aca_project`
---
-CREATE DATABASE IF NOT EXISTS aca_project;
-GRANT ALL ON aca_project.* TO 'aca_project'@'localhost' IDENTIFIED BY 'password';
-use aca_project;
--- --------------------------------------------------------
 
---
--- Table structure for table `trails`
---
+
 CREATE DATABASE IF NOT EXISTS aca_project;
 GRANT ALL PRIVILEGES ON aca_project.* to 'assist'@'localhost' identified by 'assist';
 USE aca_project;
+
+-- Table structure for table `trails`
+
+
 
 CREATE TABLE IF NOT EXISTS `trails` (
   `TrailName` varchar(20) NOT NULL,
