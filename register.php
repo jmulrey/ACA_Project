@@ -48,7 +48,7 @@
 
 	}
 	else if(strlen($pw2)< 6){ //IF PASSWORD IS TOO SHORT
-		echo strlen($_POST['pw']);
+		//echo strlen($_POST['pw']);
 	header( 'Location: short_pw.php');
 	}
 		
@@ -63,19 +63,20 @@
 		echo $row['username'];
 		echo "<br />";
 		}
+		}
 		
 	 $query = "INSERT INTO users (username,password) VALUES ('$username',sha1('$pw'))";
-	 echo strlen($pw);
+	 //echo strlen($pw);
 	 
-	 echo "<p>QUERY $query</p>";
+	 //echo "<p>QUERY $query</p>";
 	 $result = mysql_query($query)
 		or die("Error querying database!!!!!");
 					
 					
 					mysql_close($db);
-						//INSERT CODE TO FORWARD TO ANOTHER PAGE. CONTACT OSATO FOR MORE INFO
+		header( 'Location: home.php');
 
-					}
+					
 					}
 				
 					?>
