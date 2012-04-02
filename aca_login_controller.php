@@ -11,7 +11,7 @@
 	if ($row = mysql_fetch_array($result)){
 		$row['username']=$username;	
 		$_SESSION['username']=$username;
-		include("index.html");
+		include("home.php");
 	}else{	
 		$errorMessage="Invalid username or password.";
 		include("aca_login.php");
