@@ -14,7 +14,7 @@
 </table>
 
 <body bgcolor=#728FCE>
- <table>
+ <table width  = '100%'>
  <td>
  <center>
  <div id="contents">
