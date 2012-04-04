@@ -34,7 +34,7 @@
   		$query = "SELECT * FROM trails where TrailName LIKE '%$searchterm%' ORDER BY TrailName";
   		$result = mysql_query($query)
    			or die(mysql_error());
-   		echo "<table id=\"hor-minimalist-b\">\n<tr><th>TrailName</th><th>State</th><th>Difficulty</th><th>Length</th><th>Index</th><tr>\n\n";
+   		echo "<table id=\"hor-minimalist-b\">\n<tr><th><font color=#FFFFFF >TrailName</font></th><th><font color=#FFFFFF >State</font></th><th><font color=#FFFFFF >Difficulty</font></th><th><font color=#FFFFFF >Length</font></th><th><font color=#FFFFFF >Index</font></th><tr>\n\n";
 	while($row = mysql_fetch_array($result)) {
   			$TrailName = $row['TrailName'];
   			$State = $row['State'];
@@ -45,14 +45,13 @@
 			
 
 
-		  	echo "<tr><td  >$TrailName</td><td >$State</td><td >$Difficulty</td><td>$Length</td><td>$Index</td><td><a href='display_trail.php?trail=$TrailName'>View Trail Page</a></td></tr>\n";
+		  	echo "<tr><font color=#FFFFFF ><td  >$TrailName</td><td >$State</td><td >$Difficulty</td><td>$Length</td><td>$Index</td><td><a href='display_trail.php?trail=$TrailName'>View Trail Page</a></td></font></tr>\n";
 	    }
 	    echo "</table>\n"; 
   	
   	
   }
   ?>
-  <p>&nbsp;</p><p><a href="home.php">Back To Home</a></p>
   </center>
   </td>
   <td style = "background-color:#EEEEEE;width:300px;text-align:top;">
