@@ -34,9 +34,10 @@
   			$Length = $row['Length'];
   			$Index = $row['Index'];
 			
+			
 
 
-		  	echo "<tr><td  >$TrailName</td><td >$State</td><td >$Difficulty</td><td>$Length</td><td>$Index</td></tr>\n";
+		  	echo "<tr><td  >$TrailName</td><td >$State</td><td >$Difficulty</td><td>$Length</td><td>$Index</td><td><a href='display_trail.php?trail=$TrailName'>View Trail Page</a></td></tr>\n";
 	    }
 	    echo "</table>\n"; 
   	
