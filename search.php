@@ -18,11 +18,11 @@
  <table>
  <td>
   <?php
-  //	session_start();
+  	session_start();
 
   include "db_connect.php";
- // if (isset($_SESSION))
- // {
+  if (isset($_SESSION))
+  {
  
   	$searchterm = $_POST['search'];
     $searchterm = mysql_real_escape_string($searchterm);
@@ -49,7 +49,7 @@
 	    echo "</table>\n"; 
   	
   	
-  //}
+  }
   ?>
   <p>&nbsp;</p><p><a href="home.php">Back To Home</a></p>
   </div>
