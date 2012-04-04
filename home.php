@@ -20,7 +20,8 @@
 <H3 align=center><font color=#FFFFFF >Looking for a trail for your next trip or vacation? Search Below!</font></H3>
 <center>
 <form action = "search.php"\>
-<input type = "text" name = "query" size = "40"/><input type = "submit" name = "search" value = "search" /></td>
+<input type = "text" name = "search" size = "40"/>
+<input type = "submit" name = "submit" value = "search" /></td>
 </form>
 </center>
 </td>
