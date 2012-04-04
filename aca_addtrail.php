@@ -66,7 +66,6 @@
 	</center>
 	</td>
 	</table>
-	</form>
 		</div>
 	</body>
 </html>

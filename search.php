@@ -14,9 +14,10 @@
 </table>
 
 <body bgcolor=#728FCE>
-<div id="contents">
  <table>
  <td>
+ <center>
+ <div id="contents">
   <?php
   	session_start();
 
@@ -52,7 +53,7 @@
   }
   ?>
   <p>&nbsp;</p><p><a href="home.php">Back To Home</a></p>
-  </div>
+  </center>
   </td>
   <td style = "background-color:#EEEEEE;width:300px;text-align:top;">
 	<center>
@@ -63,6 +64,7 @@
 		</form>
 	</center>
 	</td>
- </table> 
+ </table>
+  </div> 
 </body>
 </html>
