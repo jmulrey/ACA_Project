@@ -56,8 +56,18 @@ echo("<tr><td>Difficulty: $content</td></tr></table>");
 
 
 ?>
-</h5></td></tr>
-</table
+</td>
+<td style = "background-color:#EEEEEE;width:300px;text-align:top;">
+	<center>
+		<h2><font color=#728FCE>Search for Trails</font></h2>
+		<H4 align=left><font color=#728FCE >Looking for a trail for your next trip or vacation? Search Below!</font></H4>
+		<form action = "search.php"\>
+		<input type = "text" name = "query" size = "40"/><input type = "submit" name = "search" value = "search" />
+		</form>
+	</center>
+	</td>
+
+</table>
 </div>
 </body>
 </html>
