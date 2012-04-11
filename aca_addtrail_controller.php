@@ -27,14 +27,17 @@
 	$trailname=$_POST['trailname'];
 	$trailstate=$_POST['trailstate']; 
 	$dropoff =$_POST['dropoff'];
-	$pickup= $_POsT['pickup'];
+	$pickup= $_POST['pickup'];
 	$length = $_POST['length'];
 	$difficulty = $_POST['difficulty'];
 	include('db_connect.php');
-	$query = "INSERT INTO  `aca_project`.`trails` (`trailname` ,`dropoff`,`pickup`,`state`,`difficulty`,`length`) VALUES ('"$trailname"','"$dropoff"','"$pickup"','"$trailstate"','"$difficulty"','"$length"')";
-	$result = mysqli_query($db, $query) or die("Error Querying Database");
-	mysqli_close($db);	
+	$query = "INSERT INTO  `aca_project`.`trails` (trailname ,dropoff,pickup,state,difficulty,length) VALUES ('$trailname','$dropoff','$pickup','$trailstate','$difficulty','$length')";
+	$result = mysql_query($query) or die("Error Querying Database");
+	mysql_close($db);	
 	//sending user to the home page
 	unset($errorMessage);
 	include("home.php");
+		echo ("$trailname, $trailstate, $dropoff, $pickup, $length, $difficulty");
+
 ?>
+
