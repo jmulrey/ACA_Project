@@ -27,19 +27,44 @@
 				<br/>(What would you like to call this trail?)</font>
 				</h4>
 				
+				<h4><font color=#FFFFFF >Description:
+				<input type="text" id="traildesc" name="traildesc" maxLength="20">
+				<br/>(Give a breif description about this trail.)</font>
+				</h4>
+				
 				<h4><font color=#FFFFFF >State:
 				<input type="text" id="trailstate" name="trailstate" maxLength="20">
 				<br/>(What state is this trail in?)</font>
 				</h4>
 				
-				<h4><font color=#FFFFFF >Drop-off Point:
-				<input type="text" id="dropoff" name="dropoff" maxlength="20" >
-				<br/>(Where does this trail start?)</font>
+				<h4><font color=#FFFFFF >Drop-off Point Name:
+				<input type="text" id="dropname" name="dropname" maxlength="20" >
+				<br/>(What is the name of this drop off point?)</font>
 				</h4>
 				
-				<h4><font color=#FFFFFF >Pick up Point:
-				<input type="text" id="pickup" name="pickup" maxLength="20" >
-				<br/>(Where does this trail end?)</font>
+				<h4><font color=#FFFFFF >Drop Off City:
+				<input type="text" id="dropcity" name="dropcity" maxLength="20">
+				<br/>(What city is the drop off point in?)</font>
+				</h4>
+				
+				<h4><font color=#FFFFFF >Drop Off State:
+				<input type="text" id="dropstate" name="dropstate" maxLength="20">
+				<br/>(What state is the drop off point in?)</font>
+				</h4>
+				
+				<h4><font color=#FFFFFF >Pick up Point Name:
+				<input type="text" id="pickname" name="pickname" maxLength="20" >
+				<br/>(What is the name of this pick up point?)</font>
+				</h4>
+				
+				<h4><font color=#FFFFFF >Pick Up City:
+				<input type="text" id="pickcity" name="pickcity" maxLength="20">
+				<br/>(What city is this pick up point in?)</font>
+				</h4>
+				
+				<h4><font color=#FFFFFF >Pick Up State:
+				<input type="text" id="pickstate" name="pickstate" maxLength="20">
+				<br/>(What state is this pick up point in?)</font>
 				</h4>
 				
 				<h4><font color=#FFFFFF >Length of trail: 
