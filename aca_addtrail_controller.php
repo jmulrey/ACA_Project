@@ -36,7 +36,7 @@
 	$length = $_POST['length'];
 	$difficulty = $_POST['difficulty'];
 	include('db_connect.php');
-	INSERT INTO `trails` (`TrailName`, `Description`, `Dropoff_Name`, `Dropoff_City`, `Dropoff_State`, `Pickup_Name`, `Pickup_City`, `Pickup_State`, `State`, `Difficulty`, `Length`, `Index`) 
+	$query = INSERT INTO `trails` (`TrailName`, `Description`, `Dropoff_Name`, `Dropoff_City`, `Dropoff_State`, `Pickup_Name`, `Pickup_City`, `Pickup_State`, `State`, `Difficulty`, `Length`, `Index`) 
 	VALUES ('$trailname','$traildesc','$dropname','$dropcity','$dropstate','$pickname','pickcity','pickstate','$trailstate','$difficulty','$length',NULL)";
 	$result = mysql_query($query) or die("Error Querying Database");
 	mysql_close($db);	
