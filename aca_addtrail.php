@@ -18,10 +18,12 @@
 <body bgcolor=#728FCE>
 	<table width = "100%">
 	<td>
+	<h1 align=center><font color=#FFFFFF >Add A Trail</font></h1>
 	<center>
 		<div id = "wrap">
 			<?php if(isset($errorMessage)){echo '<br><font color="red"><b>Error - the following entries need to be fixed:</b><ul>',$errorMessage,'</ul></font><br>',"\n";}?>
 			<form name="addtrail" method ="post" action="aca_addtrail_controller.php" onsubmit="document.register.submit.disabled=true;document.register.submit.value='Processing...'">
+				
 				<h4><font color=#FFFFFF >Name of trail: 
 				<input type="text" id="trailname" name="trailname" maxLength="20" >
 				<br/>(What would you like to call this trail?)</font>
