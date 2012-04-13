@@ -83,7 +83,7 @@
 					</td>
 <td style = "background-color:#EEEEEE;width:300px;text-align:top;">
 <center>
-<form action = "login.php"\>
+<form action = "aca_login.php"\>
 <h2><font color=#728FCE>Member Log In</font></h2>
 <h3 align=left><font color=#728FCE>Username</font></h3>
 <input type = "text" name = "username" size = "40"/>

@@ -20,8 +20,7 @@ echo('
 
 <table width = "100%">
 <td>
-<H2 align=center><font color=#FFFFFF >Welcome to the American Canoe Association Website</font></H2>
-<H3 align=center><font color=#FFFFFF >Looking for a trail for your next trip or vacation? Search Below!</font></H3>
+<H2 align=center><font color=#FFFFFF >Thanks for logging in!</font></H2>
 <center>
 <form action = "search.php"\>
 <input type = "text" name = "search" size = "40"/>
