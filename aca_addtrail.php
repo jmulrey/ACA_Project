@@ -17,7 +17,6 @@
 </table>
 <body bgcolor=#728FCE>
 	<table width = "100%">
-	<td>
 	<h1 align=center><font color=#FFFFFF >Add A Trail</font></h1>
 	<center>
 		<div id = "wrap">
@@ -82,16 +81,6 @@
 				<input type="submit" name="submit" value="Add Trail">
 			</form>
 			</center>
-	</td>
-	<td style = "background-color:#EEEEEE;width:300px;text-align:top;">
-	<center>
-		<h2><font color=#728FCE>Search for Trails</font></h2>
-		<H4 align=left><font color=#728FCE >Looking for a trail for your next trip or vacation? Search Below!</font></H4>
-		<form action = "search.php"\>
-		<input type = "text" name = "query" size = "40"/><input type = "submit" name = "search" value = "search" />
-		</form>
-	</center>
-	</td>
 	</table>
 		</div>
 	</body>
