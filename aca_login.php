@@ -12,8 +12,7 @@
 </table>
 <table width = "100%" bgcolor=#4000FF>
 <tr>
-<td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "aca_login.php" style = "text-decoration: none"><font color=#FFFFFF >login</font></font></a></td>
-</tr>
+<td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "aca_login.php" style = "text-decoration: none"><font color=#FFFFFF >login</font></a> | <a href= "aca_addtrail.php" style = "text-decoration: none"><font color=#FFFFFF >Add Trail</font></font></a></td></tr>
 </table>
 <body bgcolor=#728FCE>	
 	<table width = "100%">
@@ -29,15 +28,6 @@
 			<label for="pw" ><font color=#FFFFFF >Password:</font></label>
 			<input type="password" id="pw" name="pw" /> <br/><br/>
 			<input type="submit" value="Login" name="submit" />
-	</center>
-	</td>
-	<td style = "background-color:#EEEEEE;width:300px;text-align:top;">
-	<center>
-		<h2><font color=#728FCE>Search for Trails</font></h2>
-		<H4 align=left><font color=#728FCE >Looking for a trail for your next trip or vacation? Search Below!</font></H4>
-		<form action = "search.php"\>
-		<input type = "text" name = "query" size = "40"/><input type = "submit" name = "search" value = "search" />
-		</form>
 	</center>
 	</td>
 	</table>

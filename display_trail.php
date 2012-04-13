@@ -32,7 +32,13 @@ while($row = mysql_fetch_array($result)){
 $dropoffname = $row['Dropoff_Name'];
 $dropoffcity = $row['Dropoff_City'];
 $dropoffstate = $row['Dropoff_State'];
+echo("<center><h3><font color=#FFFFFF>Dropoff Location</font></h3></center>");
 echo("<center><table cellspacing='0' cellpadding='0' border='0'><tr><td><iframe src='http://www.map-generator.net/extmap.php?name=$dropoffname&amp;address=$dropoffcity%2C%20$dropoffstate&amp;width=500&amp;height=400&amp;maptype=map&amp;zoom=14&amp;hl=en&amp;t=1333393947' width='500' height='400' marginwidth='0' marginheight='0' frameborder='0' scrolling='no'></iframe></td></tr><tr><td align='right'><a style='font:8px Arial;text-decoration:none;cursor:default;color:#5C5C5C;' href='http://www.map-generator.net'>map-generator.net</a></td></tr></table><!-- Do not change code! -->");
+echo("<center><h3><font color=#FFFFFF>Pickup Location</font></h3></center>");
+$pickupname = $row['Pickup_Name'];
+$pickupcity = $row['Pickup_City'];
+$pickupstate = $row['Pickup_State'];
+echo("<center><table cellspacing='0' cellpadding='0' border='0'><tr><td><iframe src='http://www.map-generator.net/extmap.php?name=$pickupname&amp;address=$pickupcity%2C%20$pickupstate&amp;width=500&amp;height=400&amp;maptype=map&amp;zoom=14&amp;hl=en&amp;t=1333393947' width='500' height='400' marginwidth='0' marginheight='0' frameborder='0' scrolling='no'></iframe></td></tr><tr><td align='right'><a style='font:8px Arial;text-decoration:none;cursor:default;color:#5C5C5C;' href='http://www.map-generator.net'>map-generator.net</a></td></tr></table><!-- Do not change code! -->");
 $content = $row['Description'];
 echo("<table border = '1' width = '700' bgcolor='#FFFFFF'><tr><td>Description: $content</td></tr>");
 $content = $row['State'];
