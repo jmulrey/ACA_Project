@@ -48,7 +48,6 @@ CREATE TABLE IF NOT EXISTS `trails` (
 --
 
 INSERT INTO `trails` (`TrailName`, `Description`, `Dropoff_Name`, `Dropoff_City`, `Dropoff_State`, `Pickup_Name`, `Pickup_City`, `Pickup_State`, `State`, `Difficulty`, `Length`, `Index`) VALUES
-('Rappahannock River', 0x5468697320697320612070726574747920636f6f6c20747261696c2e, 'Rappahannock River', 'Fredericksburg', 'VA', 'Rappahannock River', 'Fredericksburg', 'VA', 'VA', 5, 50, 1),
 ('Lake Naticook', '', 'Lake Naticook', 'Merrimack', 'NH', 'Lake Naticook', 'Merrimack', 'NH', 'NH', 2, 10, 2),
 ('Lake Anna', '', 'Lake Anna', 'Lewiston', 'VA', 'Lake Anna', 'Lewiston', 'VA', 'VA', 2, 15, 3);
 

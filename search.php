@@ -24,14 +24,13 @@
   include "db_connect.php";
   if (isset($_SESSION))
   {
- 
-  	$searchterm = $_POST['search'];
-    $searchterm = mysql_real_escape_string($searchterm);
+	$sn = $_POST["sname"];
+  
   	
  
   	
 			
-  		$query = "SELECT * FROM trails where TrailName LIKE '%$searchterm%' ORDER BY TrailName";
+  		$query = "SELECT * FROM trails where TrailName LIKE '%$sn%' ORDER BY TrailName";
   		$result = mysql_query($query)
    			or die(mysql_error());
    		echo "<table id=\"hor-minimalist-b\">\n<tr><th><font color=#FFFFFF >TrailName</font></th><th><font color=#FFFFFF >State</font></th><th><font color=#FFFFFF >Difficulty</font></th><th><font color=#FFFFFF >Length</font></th><th><font color=#FFFFFF >Index</font></th><tr>\n\n";

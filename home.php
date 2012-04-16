@@ -45,9 +45,9 @@ echo('
 <H2 align=center><font color=#FFFFFF >Welcome to the American Canoe Association Website</font></H2>
 <H3 align=center><font color=#FFFFFF >Looking for a trail for your next trip or vacation? Search Below!</font></H3>
 <center>
-<form action = "search.php"\>
-<input type = "text" name = "search" size = "40"/>
-<input type = "submit" name = "submit" value = "search" /></td>
+<form action="search.php" method="post">
+Name: <input type="text" name="sname" />
+<input type = "submit" />
 </form>
 </center>
 </td>
