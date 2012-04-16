@@ -30,11 +30,6 @@ echo('
 <input type = "submit" name = "submit" value = "search" /></td>
 </form>
 </center>
-</td>
-<td style = "background-color:#EEEEEE;width:300px;text-align:top;">
-<center>
-</center>
-</td>
 </table>
 </BODY>
 ');
@@ -64,7 +59,7 @@ echo('
 <H3 align=center><font color=#FFFFFF >Looking for a trail for your next trip or vacation? Search Below!</font></H3>
 <center>
 <form action="search.php" method="post">
-Name: <input type="text" name="sname" />
+<input type="text" name="sname" />
 <input type = "submit" />
 </form>
 </center>
