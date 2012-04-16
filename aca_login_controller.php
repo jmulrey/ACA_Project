@@ -1,4 +1,4 @@
-<?php if(!isset($_SESSION)){session_start();}  ?>
+<?php if(!isset($_SESSION['username'])){session_start();}  ?>
 <?php
 	//Connect to the Database
 	include('db_connect.php'); 
