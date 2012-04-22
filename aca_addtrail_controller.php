@@ -1,4 +1,6 @@
-<?php if(!isset($_SESSION)){session_start();}  ?>
+<?php //if(!isset($_SESSION)){session_start();}  
+	include('db_connect.php');
+?>
 <?php
 	//query sql for trailname
 //	$trailname=$_POST['trailname'];
@@ -43,7 +45,7 @@
 	//sending user to the home page
 	unset($errorMessage);
 	include("home.php");
-		echo ("$trailname','$traildesc','$dropname','$dropcity','$dropstate','$pickname','$pickcity','$pickstate','$trailstate','$difficulty','$length',NULL");
+		//echo ("$trailname','$traildesc','$dropname','$dropcity','$dropstate','$pickname','$pickcity','$pickstate','$trailstate','$difficulty','$length',NULL");
 
 ?>
 

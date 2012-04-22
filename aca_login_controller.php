@@ -1,7 +1,9 @@
-<?php if(!isset($_SESSION['username'])){session_start();}  ?>
+<?php //if(!isset($_SESSION['username'])){session_start();}  
+	include('db_connect.php'); 
+?>
 <?php
 	//Connect to the Database
-	include('db_connect.php'); 
+	//include('db_connect.php'); 
 	//Recieve Login Info
 	$username = $_POST['username'];
 	$pw = $_POST['pw'];	

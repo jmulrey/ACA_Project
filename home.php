@@ -1,7 +1,7 @@
 <?php
 
 include "db_connect.php";
-session_start();
+//session_start();
 if(isset($_SESSION['username']))
 {
 echo('

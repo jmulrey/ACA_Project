@@ -34,7 +34,7 @@
 <?php
 	include "db_connect.php";
 
-	session_start();
+	//session_start();
 	if (isset($_POST['username']) && isset($_POST['pw']) && isset($_POST['pw2']))
 	{
 	$username= $_POST['username'];

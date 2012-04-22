@@ -24,8 +24,11 @@ CREATE DATABASE IF NOT EXISTS aca_project;
 GRANT ALL PRIVILEGES ON aca_project.* to 'assist'@'localhost' identified by 'assist';
 USE aca_project;
 
--- Table structure for table `trails`
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `trails`
+--
 
 CREATE TABLE IF NOT EXISTS `trails` (
   `TrailName` varchar(20) NOT NULL,
@@ -41,25 +44,27 @@ CREATE TABLE IF NOT EXISTS `trails` (
   `Length` int(100) NOT NULL,
   `Index` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`Index`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `trails`
 --
 
 INSERT INTO `trails` (`TrailName`, `Description`, `Dropoff_Name`, `Dropoff_City`, `Dropoff_State`, `Pickup_Name`, `Pickup_City`, `Pickup_State`, `State`, `Difficulty`, `Length`, `Index`) VALUES
+('Rappahannock River', 0x5468697320697320612070726574747920636f6f6c20747261696c2e, 'Rappahannock River', 'Fredericksburg', 'VA', 'Rappahannock River', 'Fredericksburg', 'VA', 'VA', 5, 50, 1),
 ('Lake Naticook', '', 'Lake Naticook', 'Merrimack', 'NH', 'Lake Naticook', 'Merrimack', 'NH', 'NH', 2, 10, 2),
-('Lake Anna', '', 'Lake Anna', 'Lewiston', 'VA', 'Lake Anna', 'Lewiston', 'VA', 'VA', 2, 15, 3);
+('Lake Anna', '', 'Lake Anna', 'Lewiston', 'VA', 'Lake Anna', 'Lewiston', 'VA', 'VA', 2, 15, 3),
+('lake test', 0x6164666761736466647366, 'caroine street', 'fredericksburg', 'va', 'college ave', 'fredericksburg', 'va', 'VA', 5, 5, 6);
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `users`
 --
-GRANT ALL PRIVILEGES ON aca_project.* to 'assist'@'localhost' identified by 'assist';
+
 CREATE TABLE IF NOT EXISTS `users` (
   `Username` varchar(15) NOT NULL,
-  `Password` varchar(15) NOT NULL,
+  `Password` varchar(60) NOT NULL,
   PRIMARY KEY (`Username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -68,7 +73,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`Username`, `Password`) VALUES
-('', 'password');
+('', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'),
+('admin', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'),
+('jack', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -1,4 +1,4 @@
-
+<?php include('db_connect.php');  ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,9 +21,9 @@
   </form>
   </div>
 <?php
-	include "db_connect.php";
+	//include "db_connect.php";
 
-	session_start();
+	//session_start();
 	if (isset($_POST['username']) && isset($_POST['pw']) && isset($_POST['pw2']))
 	{
 	$username= $_POST['username'];

@@ -1,5 +1,6 @@
 <?php
-session_start();
+//session_start();
+include('db_connect.php'); 
 if(session_destroy()){
 
 echo('
