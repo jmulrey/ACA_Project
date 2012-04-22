@@ -25,9 +25,9 @@ echo('
 <td>
 <H2 align=center><font color=#FFFFFF >Thanks for logging in!</font></H2>
 <center>
-<form action = "search.php"\>
-<input type = "text" name = "search" size = "40"/>
-<input type = "submit" name = "submit" value = "search" /></td>
+<form action="search.php" method="post">
+<input type="text" name="sname" />
+<input type = "submit" />
 </form>
 </center>
 </table>

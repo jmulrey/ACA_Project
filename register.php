@@ -1,4 +1,4 @@
-
+<?php include "db_connect.php"; ?>
 <html>
 <head>
   <title>Create Account</title>
@@ -8,11 +8,27 @@
 <td align = "left"><img src = "header.png" width = "100%"></td>
 </tr>
 </table>
+<?php
+if(isset($_SESSION['username']))
+{
+echo('
+<table width = "100%" bgcolor=#4000FF>
+<tr>
+<td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "aca_logout.php" style = "text-decoration: none"><font color=#FFFFFF >logout</a> | <a href= "aca_addtrail.php" style = "text-decoration: none"><font color=#FFFFFF >Add Trail</font></font></a></td>
+</tr>
+</table>
+');
+}
+else{
+echo('
 <table width = "100%" bgcolor=#4000FF>
 <tr>
 <td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "aca_login.php" style = "text-decoration: none"><font color=#FFFFFF >login</font></font></a></td>
 </tr>
 </table>
+');
+}
+?>
 <BODY bgcolor=#728FCE>
 <table width = "100%">
 <td>
@@ -32,7 +48,7 @@
   </center>
   </div>
 <?php
-	include "db_connect.php";
+	//include "db_connect.php";
 
 	//session_start();
 	if (isset($_POST['username']) && isset($_POST['pw']) && isset($_POST['pw2']))
@@ -81,18 +97,7 @@
 				
 					?>
 					</td>
-<td style = "background-color:#EEEEEE;width:300px;text-align:top;">
-<center>
-<form action = "aca_login.php"\>
-<h2><font color=#728FCE>Member Log In</font></h2>
-<h3 align=left><font color=#728FCE>Username</font></h3>
-<input type = "text" name = "username" size = "40"/>
-<h3 align=left><font color=#728FCE>Password</font></h3>
-<input type = "text" name = "password" size = "40"/>
-<input align=right type = "submit" name = "submit" value = "submit" /></td>
-</form>
-</center>
-</td>
+
 </table>
 					</body>
 					</html>

@@ -1,4 +1,5 @@
-<?php if(!isset($_SESSION)){session_start();}  ?>
+<?php include("db_connect.php");  ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -10,11 +11,27 @@
 <td align = "left"><img src = "header.png" width = "100%"></td>
 </tr>
 </table>
+<?php
+if(isset($_SESSION['username']))
+{
+echo('
+<table width = "100%" bgcolor=#4000FF>
+<tr>
+<td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "aca_logout.php" style = "text-decoration: none"><font color=#FFFFFF >logout</a> | <a href= "aca_addtrail.php" style = "text-decoration: none"><font color=#FFFFFF >Add Trail</font></font></a></td>
+</tr>
+</table>
+');
+}
+else{
+echo('
 <table width = "100%" bgcolor=#4000FF>
 <tr>
 <td align = "right"><a href = "Home.php" style = "text-decoration: none"><font color=#FFFFFF >home</a> | <a href = "register.php" style = "text-decoration: none"><font color=#FFFFFF >register</font></a> | <a href = "aca_login.php" style = "text-decoration: none"><font color=#FFFFFF >login</font></font></a></td>
 </tr>
 </table>
+');
+}
+?>
 <body bgcolor=#728FCE>
 	<table width = "100%">
 	<h1 align=center><font color=#FFFFFF >Add A Trail</font></h1>
