@@ -5,6 +5,7 @@
 	//Recieve Login Info
 	$username = $_POST['username'];
 	$pw = $_POST['pw'];	
+	$pw = sha1($pw);
 	//Check login against database
 	$query= "SELECT * FROM users WHERE username = '$username' AND password = '$pw'";
 	$result=mysql_query($query) or die ("Error Querying Database");
